@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <p><strong>Salary > </strong>{{ salary }}</p>
+    <p><strong>Employee count:</strong>
+        {% for result in results %}
+        {{ result.0 }}
+        {% endfor %}
+    </p>
+    <a href="{% url 'index' %}">index page</a>
+{% endblock %}

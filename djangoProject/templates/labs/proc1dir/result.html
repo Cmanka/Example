@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <p><strong>Hall name:</strong>{{ hall_name }}</p>
+    <p><strong>Employee name:</strong>
+        {% for result in results %}
+            {{ result.0 }}
+        {% endfor %}
+    </p>
+    <a href="{% url 'index' %}">index page</a>
+{% endblock %}

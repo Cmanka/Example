@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+    <ul>
+        <li><a href="/admin">Admin panel</a></li>
+        <li><a href="{% url 'proc1' %}">Procedure 1</a></li>
+        <li><a href="{% url 'proc2' %}">Procedure 2</a></li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        <label for="salary">Enter interested limitation</label>
+        <input type="text" name="salary"><br/>
+        <input type="submit" value="Get data">
+    </form>
+    <a href="{% url 'index' %}">index page</a>
+{% endblock %}
